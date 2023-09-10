@@ -1,27 +1,54 @@
-# EmployeeDevelopment
+# Employee Development
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+aplikasi crud dengan data dummy employee
 
-## Development server
+## Menjalankan Aplikasi
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Berikut tools-tools yang saya gunakan dalam membangun aplikasi ini
+1. Angular CLI: 15.0.5
+2. Node: 18.15.0
+3. Package Manager: npm 9.5.0
+4. OS: linux x64
+5. tailwindcss@3.3.3
+6. @angular/material@15.2.9
 
-## Code scaffolding
+Berikut adalah langkah-langkah untuk menjalankan aplikasi ini di lingkungan pengembangan Anda:
+1. clone project ini dari repositori github saya
+2. install node modules dengan npm i di terminal anda(saya sarankan menggunakan node modul 16 minimal)
+3. ng serve untuk menjalankan project ini
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+daftar fitur dan validasi di project ini
+<!-- Halaman Login Register -->
+1. data tidak boleh kosong
+2. password minimal 6 huruf atau angka
+3. data yang anda register akan tersimpan kedalam local storage browser anda
 
-## Build
+<!-- Halaman Employee -->
+1. filter name, username, group, dan status (filter akan tersimpan walau anda berpindah halaman karna data tersimpan ke local storage)
+2. reset filter untuk menghapus filter dari tampilan dan local storage
+2. sorting dengan cara menekan header dari data yang mau anda sort (misal: sorting basic salary, klik header basic salary dari table )
+3. pagination (anda bisa menentukan data yang ingin anda tampilkan berapa banyak)
+4. action info untuk membuka detail dari data yang anda pilih. Selebihnya hanya dummy button sesuai permintaan di soal
+5. button add new employee untuk navigasi ke halaman add
+6. 100 data dummy yang diambil dari data.ts didalam folder shared sesuai soal
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<!-- Halaman Detail -->
+1. untuk menampilkan detail dari salah satu data table yang anda pilih
+2. button ok untuk kembali halaman employee
 
-## Running unit tests
+<!-- Halaman Add -->
+1. halaman untuk menambah data emloyee
+2. validasi format email
+3. validasi tanggal tidak boleh lewat dari tanggal sekarang
+4. validasi form tidak boleh kosong
+5. form group menggunakan search form dan dropdown
+6. button cancel untuk kembali ke halaman employee tanpa action apapun
+7. button tambah jika semua validasi terpenuhi akan menambah data dan berpindah otomatis ke halaman employee
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+NOTES: usahakan untuk tidak merefresh web browser selama menguji coba aplikasi. Dikarenakan
+semua data table disini adalah data dummy jadi semua data yang anda tambah akan kembali seperti semula sesuai dengan
+data.ts
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Thank You 
+Paskahl Herbert Simarmata

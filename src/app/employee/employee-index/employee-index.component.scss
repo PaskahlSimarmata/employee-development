@@ -1,0 +1,62 @@
+.mat-mdc-cell {
+  background-color: #f0f0f0 !important;
+  color: rgb(71, 69, 69) !important;
+}
+.mat-mdc-header-cell {
+  background-color: #f1f1f1 !important;
+  color: rgb(71, 69, 69) !important;
+}
+mat-paginator {
+  background-color: rgb(114, 112, 112) !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.delete{
+    color: rgb(245, 64, 8) !important;
+    cursor:  pointer !important;
+}
+.edit{
+    color: rgb(228, 207, 21) !important;
+    cursor:  pointer !important;
+}
+.info{
+  color: rgb(34, 79, 230) !important;
+  cursor:  pointer !important;
+}
+::ng-deep .warning{
+  background: #cc1313ea !important;
+}
+
+// for dropdown menu
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+  display: none;
+}
+
+li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+ul.active {
+  display: block;
+}

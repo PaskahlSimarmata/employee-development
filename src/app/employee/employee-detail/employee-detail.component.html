@@ -1,0 +1,59 @@
+<div class="sm:px-20 px-5 mt-5 w-full">
+  <div class="flex justify-center">
+    <span class="font-medium text-2xl">Detail Data Employee</span>
+  </div>
+  <div
+    class="bg-gray-200 mt-2 text-gray-600 text-center rounded-lg p-5 sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5"
+  >
+    <div>
+      <p>Username:</p>
+      <p class="font-medium">{{ EmployeeData?.username }}</p>
+    </div>
+    <div>
+      <p>First Name:</p>
+      <p class="font-medium">{{ EmployeeData?.fisrtName }}</p>
+    </div>
+    <div>
+      <p>Last Name:</p>
+      <p class="font-medium">{{ EmployeeData?.lastName }}</p>
+    </div>
+    <div>
+      <p>Email:</p>
+      <p class="font-medium">{{ EmployeeData?.email }}</p>
+    </div>
+    <div>
+      <p>Birth Date:</p>
+      <p class="font-medium">{{ EmployeeData?.birthDate }}</p>
+    </div>
+    <div>
+      <p>Basic Salary:</p>
+      <p class="font-medium">{{ EmployeeData?.basicSalary | currency:'IDR ':'symbol':'1.0-0' }}</p>
+    </div>
+    <div class="mb-4 lg:mb-0">
+      <p>Status:</p>
+      <div class="">
+        <span
+          [ngClass]="EmployeeData?.status == 'active' ? 'bg-green-500' :'bg-red-500'"
+          class="text-gray-50 font-medium py-2 px-3 rounded-xl "
+          >{{ EmployeeData?.status }}</span
+        >
+      </div>
+    </div>
+    <div>
+      <p>Group:</p>
+      <p class="font-medium">{{ EmployeeData?.group }}</p>
+    </div>
+    <div>
+      <p>Descripton:</p>
+      <p class="font-medium">{{ EmployeeData?.description }}</p>
+    </div>
+  </div>
+  <div class="flex justify-end mt-2">
+    <button
+      routerLink="/employee"
+      class="px-3 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-gray-100"
+    >
+      OK
+    </button>
+  </div>
+</div>
